@@ -43,8 +43,7 @@ This is a super easy and efficient boilerplate project for creating awesome brow
 
 - `yarn start`: Starts a local development server for the project.
 - `yarn test`: Runs the project's test suite in a local server environment.
-- `yarn build`: Compiles the project and prepares it for production.
-- `yarn pack`: Packages the project into a distributable format.
+- `yarn build`: Compiles the project and pack it to zip for distribution.
 
 
 ## Contributing

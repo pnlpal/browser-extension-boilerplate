@@ -7,10 +7,9 @@
     "url": "git@github.com:pnlpal/browser-extension-boilerplate.git"
   },
   "scripts": {
-    "build": "node utils/build.js",
+    "build": "node utils/build.js && ./pack.sh",
     "start": "node utils/webserver.js",
-    "test": "(sleep 1; echo 'To run all tests, visit:\u001b[0;32m http://localhost:8080/utils/test.html\u001b[0m') & http-server",
-    "pack": "sh pack.sh"
+    "test": "(sleep 1; echo 'To run all tests, visit:\u001b[0;32m http://localhost:8080/utils/test.html\u001b[0m') & http-server"
   },
   "author": "River Yang",
   "license": "MIT",
