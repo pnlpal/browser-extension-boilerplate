@@ -2,7 +2,7 @@ const listeners = {};
 
 export default {
   handle: (request, sender, sendResponse) => {
-    if (request.type in Object.keys(listeners)) {
+    if (request.type in listeners) {
       const ret = listeners[request.type](request, sender);
       if (ret?.then) {
         ret.then(sendResponse).catch((err) => {

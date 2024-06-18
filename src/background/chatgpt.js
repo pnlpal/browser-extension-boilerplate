@@ -42,6 +42,15 @@ export default {
       });
     });
 
+    message.on("chatgpt beforeunload", (request) => {
+      setting.setValues({
+        windowLeft: request.left,
+        windowTop: request.top,
+        windowWidth: request.width,
+        windowHeight: request.height,
+      });
+    });
+
     message.on("read text", async (request) => {
       if (!navigator.userAgent.includes("Gecko/")) {
         await setupOffscreenDocument();
