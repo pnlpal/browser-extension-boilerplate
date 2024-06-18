@@ -18,7 +18,7 @@ export default {
 
     const savedData = await chrome.storage.sync.get("config");
     if (savedData?.config) {
-      Object.assign(this.configCache, obj.config);
+      Object.assign(this.configCache, savedData.config);
     }
   },
 

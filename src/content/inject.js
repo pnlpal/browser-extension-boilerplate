@@ -1,4 +1,4 @@
-console.log("Hello from inject.js!", document.body.nodeName);
+console.log("Hello from inject.js!");
 
 window.addEventListener("beforeunload", function (event) {
   chrome.runtime.sendMessage({
@@ -9,3 +9,7 @@ window.addEventListener("beforeunload", function (event) {
     height: window.outerHeight,
   });
 });
+
+export function justForTest() {
+  return true;
+}

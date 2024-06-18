@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node utils/build.js",
     "start": "node utils/webserver.js",
+    "test": "(sleep 1; echo 'To run all tests, visit:\u001b[0;32m http://localhost:8080/utils/test.html\u001b[0m') & http-server",
     "pack": "sh pack.sh"
   },
   "author": "River Yang",
@@ -46,6 +47,7 @@
     "file-loader": "^6.2.0",
     "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
     "less-loader": "^12.2.0",
     "mocha": "^10.4.0",
     "querystring": "^0.2.1",
