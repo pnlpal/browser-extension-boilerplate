@@ -6,5 +6,3 @@ describe("inject.js", () => {
     chai.expect(result).to.equal(true);
   });
 });
-
-mocha.run();
